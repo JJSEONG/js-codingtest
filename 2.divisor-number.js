@@ -18,7 +18,7 @@ function solution1(arr, divisor) {
       answer.sort((a,b) => a - b)
     }
 
-  return answer//.length === 0? [-1]:answer.sort((a,b) => a - b)
+  return answer
 }
 
 console.log(solution([5, 10, 15, 20, 23], 5))
