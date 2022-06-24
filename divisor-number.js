@@ -14,4 +14,4 @@ function solution(arr, divisor) {
 
   return answer//.length === 0? [-1]:answer.sort((a,b) => a - b)
 }
-console.log(solution([4, 8, 12], 5))
+console.log(solution([5, 10, 15, 20, 23], 5))
