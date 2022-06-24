@@ -7,7 +7,12 @@
 // 118372	873211
 
 function solution(num) {
-  return Number(num.toString().split('').sort((a,b) => (b - a)).join(''))
+  let answer = num.toString().split('').sort((a,b) => (b - a)).join('')
+  return answer
 }
 
-console.log(solution(118372))
+function solution2(num) {
+  return num.toString().split('').sort((a,b) => (b - a)).join('--')
+}
+
+console.log(solution2(118372))
