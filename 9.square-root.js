@@ -5,7 +5,7 @@
 임의의 양의 정수 n에 대해, n이 어떤 양의 정수 x의 제곱인지 아닌지 판단하려 합니다.
 n이 양의 정수 x의 제곱이라면 x+1의 제곱을 리턴하고, n이 양의 정수 x의 제곱이 아니라면 -1을 리턴하는 함수를 완성하세요. */
 
-function solution01(n) {
+function solution1(n) {
   let num = 0;
   let answer = 0;
 
@@ -19,8 +19,8 @@ function solution01(n) {
   }
   return answer
 }
-console.log(solution01('for문을 사용해 만든 함수 : ' + '9'))
-console.log(solution01('for문을 사용해 만든 함수 : ' + '8'))
+console.log('for문을 사용해 만든 함수 : ' + solution1(9))
+console.log('for문을 사용해 만든 함수 : ' + solution1(8))
 
 
 
@@ -38,8 +38,8 @@ function solution2(n) {
   }
   return sqrt
 }
-console.log(solution2('Math.sqrt(n)을 사용하여 만든 함수 : ' + solution2(121)))
-console.log(solution2('Math.sqrt(n)을 사용하여 만든 함수 : ' + solution2(88)))
+console.log('Math.sqrt(n)을 사용하여 만든 함수 : ' + solution2((121)))
+console.log('Math.sqrt(n)을 사용하여 만든 함수 : ' + solution2((88)))
 
 
 // Math.pow(a, b) => a에 속하는 숫자를 b번만큼 서로 곱한다
@@ -57,4 +57,6 @@ function solution3(n) {
   return sqrt%1===0?Math.pow(sqrt+1, 2):-1;
 }
 
-console.log(solution(10))
+console.log('Math.sqrt(n)과 Math.pow를 사용하여 만든 함수 : ' + solution3(144))
+console.log('Math.sqrt(n)과 Math.pow를 사용하여 만든 함수 : ' + solution3(151))
+console.log('Math.sqrt(n)과 Math.pow를 사용하여 만든 함수 : ' + solution3(16))
